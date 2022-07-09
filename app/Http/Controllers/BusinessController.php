@@ -9,11 +9,8 @@ class BusinessController extends Controller
 {
     public function index()
     {
-        $business = Business::find(10)->update([
-        'name' => 'Felipe',
-        'email' => 'felipesalles@outlook.com',
-        'adress' => 'quadra C rua B'
-    ]);
+        $business = Business::find(10);
+        $business->delete();
     }
 }
 
